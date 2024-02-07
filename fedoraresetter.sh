@@ -13,7 +13,7 @@ sudo dnf group install lxqt-desktop-environment --skip-broken -y
 echo Disabling SDDM
 sudo systemctl disable sddm.service
 echo Installing  GDM
-sudo dnf install gdm
+sudo dnf install gdm -y 
 echo Enabling GDM
 sudo systemctl enable gdm.service
 echo Enabling Non-Free Repos
