@@ -48,6 +48,7 @@ echo Installing Kvantum Theme
 sudo dnf install kvantum -y
 echo Installing Ark
 sudo dnf install ark -y
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 echo Installing Brave  [Flatpak version]
 flatpak install com.brave.Browser/x86_64/stable -y
 echo Installing PrismLauncher  [Flatpak version]
