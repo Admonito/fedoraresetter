@@ -48,6 +48,10 @@ echo Installing Kvantum Theme
 sudo dnf install kvantum -y
 echo Installing Ark
 sudo dnf install ark -y
+echo Removing Kfind,Kmousetool,Kcharselect,Kmag and Discover
+sudo dnf remove kfind kmousetool kcharselect kmag plasma-discover -y
+echo Installing Gperftools 
+sudo dnf install gperftools-libs.i686 -y
 echo Adding Flathub repository
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 echo Installing Brave  [Flatpak version]
